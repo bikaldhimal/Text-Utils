@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // Note: Strict mode is turned on here so that we won't have any bugs in future
+  // Note yaha tall <App /> component xa tyo jasto dekhinxa hamro site ni testae dekhinxa
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root') // vannu ko matlab k ho vaney jaha index.html file vitra root vanney Id vetinxa tyaha gaera App component laii haal vanya ho 
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
